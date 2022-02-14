@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  grid-area: n;
+  height: 150px;
+  margin-bottom: 50px;
+  background-color: #808080;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 270px;
+  background-color: #545654;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.item.profile {
+  font-weight: bold;
+}
+
+.item {
+  a.active {
+    color: darkslategrey;
+    font-weight: bold;
+  }
+}
