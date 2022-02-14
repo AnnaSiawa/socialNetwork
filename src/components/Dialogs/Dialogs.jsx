@@ -12,25 +12,28 @@ const DialogItem = (props) => {
     );
 }
 
+const Message = (props) => {
+    return (
+        <div className={styles.message}>{props.message}</div>
+    );
+}
+
 const Dialogs = (props) => {
+
+    let dialogsData = [{id: 1, name: 'Anna'}, {id: 2, name: 'Sasha'}, {id: 3, name: 'Ivan'}, {id: 4, name: 'Ilia'}];
+
     return (
         <div className={styles.dialogs}>
             <div className={styles.dialogsItems}>
-               <DialogItem name="Anna" id="1"/>
-                <div className={styles.dialog}>
-                    <NavLink to="/dialogs/2">Sasha</NavLink>
-                </div>
-                <div className={styles.dialog}>
-                    <NavLink to="/dialogs/3">Ivan</NavLink>
-                </div>
-                <div className={styles.dialog}>
-                    <NavLink to="/dialogs/4">Ilia</NavLink>
-                </div>
+                <DialogItem name="Anna" id="1"/>
+                <DialogItem name="Sasha" id="2"/>
+                <DialogItem name="Ivan" id="3"/>
+                <DialogItem name="Ilia" id="4"/>
             </div>
             <div className={styles.messages}>
-                <div className={styles.message}>Hi</div>
-                <div className={styles.message}>How are you?</div>
-                <div className={styles.message}>Yo</div>
+                <Message message="Hi"/>
+                <Message message="How are you?"/>
+                <Message message="Yo"/>
             </div>
         </div>
     );
