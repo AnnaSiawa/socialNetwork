@@ -20,20 +20,33 @@ const Message = (props) => {
 
 const Dialogs = (props) => {
 
-    let dialogsData = [{id: 1, name: 'Anna'}, {id: 2, name: 'Sasha'}, {id: 3, name: 'Ivan'}, {id: 4, name: 'Ilia'}];
+    let dialogs = [
+        {id: 1, name: 'Anna'},
+        {id: 2, name: 'Sasha'},
+        {id: 3, name: 'Ivan'},
+        {id: 4, name: 'Ilia'}
+    ];
+
+    let messages = [
+        {id: 1, message: 'Hi"'},
+        {id: 2, message: 'How are you?'},
+        {id: 3, message: 'Yo'}
+    ];
+
+    //создать массив компонентов DialogItem (отрисовка компонента
+    let dialogsElements = dialogs.map(d => <DialogItem name={d.name} id={d.id}/> );
+
+    //создать массив компонентов Message
+    let messagesElements = messages.map(m => <Message message={m.message} id={m.id}/> );
+
 
     return (
         <div className={styles.dialogs}>
             <div className={styles.dialogsItems}>
-                <DialogItem name="Anna" id="1"/>
-                <DialogItem name="Sasha" id="2"/>
-                <DialogItem name="Ivan" id="3"/>
-                <DialogItem name="Ilia" id="4"/>
+                { dialogsElements }
             </div>
             <div className={styles.messages}>
-                <Message message="Hi"/>
-                <Message message="How are you?"/>
-                <Message message="Yo"/>
+                { messagesElements }
             </div>
         </div>
     );
