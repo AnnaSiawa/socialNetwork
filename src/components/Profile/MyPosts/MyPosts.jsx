@@ -8,10 +8,9 @@ const MyPosts = () => {
         {id: 1, message: 'Hello', likesCount: 6},
         {id: 2, message: 'How are you?', likesCount: 7},
         {id: 3, message: 'It\'s my first post', likesCount: 1},
-        {id: 4, message: 'Did you like the film?', likesCount: 16}
+        {id: 3, message: 'Did you like the film?', likesCount: 16},
     ];
 
-    //создать массив компонентов DialogItem (отрисовка компонента)
     let postsElements = posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>);
 
     return (

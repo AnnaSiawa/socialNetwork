@@ -17,8 +17,13 @@ const App = (props) => {
                 <Navbar/>
                 <div className={styles.content}>
                     <Routes>
-                        <Route path='/dialogs' element={<Dialogs />}/>
-                        <Route path='/profile' element={<Profile />}/>
+                        {/*<Route path='/dialogs' element={<Dialogs />}/>*/}
+                        {/*<Route path='/profile' element={<Profile />}/>*/}
+
+                        <Route path='/dialogs' element={<Dialogs prop={props.prop} />}/>
+                        <Route path='/profile' element={<Profile prop={props.prop} />}/>
+
+                        {/*<Route path='/profile' element={ () => <Profile /> }/>*/}
 
                         <Route path='/news' element={<News />}/>
                         <Route path='/music' element={<Music />}/>
