@@ -1,0 +1,27 @@
+.sideBar {
+//  position: fixed;
+//  left: 0;
+//  top: 230px;
+  margin-right: 25px;
+  padding: 10px;
+  width: 270px;
+  //height: 75vh;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px 4px rgb(34 60 60 / 20%);
+}
+
+.title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: rgba(47, 79, 79, 0.97);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}

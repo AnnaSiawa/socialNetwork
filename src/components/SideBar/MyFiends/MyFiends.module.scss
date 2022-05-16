@@ -1,0 +1,29 @@
+.myFiends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:hover {
+    .name {
+      font-weight: bold;
+      color: darkslategrey;
+    }
+    img {
+      box-shadow: 2px 2px 8px 4px rgb(34 60 60 / 20%);
+      opacity: 0.6;
+    }
+  }
+
+  .name {
+    transition: 0.1s;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+}
