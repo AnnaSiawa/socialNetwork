@@ -7,10 +7,10 @@ import Message from './Message/Message';
 const Dialogs = (props) => {
 
     //создать массив компонентов DialogItem (отрисовка компонента)
-    let dialogsElements = props.dialogs.map(d => <DialogItem name={d.name} id={d.id}/> );
+    let dialogsElements = props.state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/> );
 
     //создать массив компонентов Message
-    let messagesElements = props.messages.map(m => <Message message={m.message} id={m.id}/> );
+    let messagesElements = props.state.messages.map(m => <Message message={m.message} id={m.id}/> );
 
 
     return (
