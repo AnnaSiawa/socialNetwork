@@ -25,6 +25,21 @@ let state = {
             {id: 1, name: 'Anna'},
             {id: 2, name: 'Sasha'},
             {id: 3, name: 'Ivan'},
+            {id: 1, name: 'Anna'},
+            {id: 2, name: 'Sasha'},
+            {id: 3, name: 'Ivan'},
+            {id: 1, name: 'Anna'},
+            {id: 2, name: 'Sasha'},
+            {id: 3, name: 'Ivan'},
+            {id: 1, name: 'Anna'},
+            {id: 2, name: 'Sasha'},
+            {id: 3, name: 'Ivan'},
+            {id: 1, name: 'Anna'},
+            {id: 2, name: 'Sasha'},
+            {id: 3, name: 'Ivan'},
+            {id: 1, name: 'Anna'},
+            {id: 2, name: 'Sasha'},
+            {id: 3, name: 'Ivan'},
             {id: 4, name: 'Ilia'}
         ]
     }

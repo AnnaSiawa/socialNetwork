@@ -1,12 +1,9 @@
 .sideBar {
-//  position: fixed;
-//  left: 0;
-//  top: 230px;
   margin-right: 25px;
   padding: 10px;
   width: 270px;
-  //height: 75vh;
-  height: auto;
+  height: 84vh;
+  overflow: auto;
   background-color: #fff;
   box-shadow: 2px 2px 8px 4px rgb(34 60 60 / 20%);
 }
