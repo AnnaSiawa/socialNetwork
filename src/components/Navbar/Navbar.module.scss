@@ -16,6 +16,7 @@
   width: 270px;
   background-color: #545654;
   a {
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
   }
@@ -27,7 +28,7 @@
 
 .item {
   a.active {
-    color: darkslategrey;
+    color: #75d0d0;
     font-weight: bold;
   }
 }

@@ -8,36 +8,32 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import SideBar from "./components/SideBar/SideBar";
 
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 const App = (props) => {
 
     return (
-        <BrowserRouter>
-            <div className={styles.app__wrapper}>
-                <Header/>
-                <Navbar/>
+        <div className={styles.app__wrapper}>
+            <Header/>
+            <Navbar/>
 
-                <div className={styles.app__inner}>
-                    <div className={styles.content}>
-                        <Routes>
-                            <Route path='/dialogs'
-                                   element={<Dialogs state={props.state.dialogsPage}/>}/>
-                            <Route path='/profile'
-                                   element={<Profile state={props.state.profilePage}/>}/>
+            <div className={styles.app__inner}>
+                <div className={styles.content}>
+                    <Routes>
+                        <Route path='/dialogs'
+                               element={<Dialogs state={props.state.dialogsPage}/>}/>
+                        <Route path='/profile'
+                               element={<Profile state={props.state.profilePage}/>}/>
 
-                            <Route path='/news' element={<News/>}/>
-                            <Route path='/music' element={<Music/>}/>
-                            <Route path='/settings' element={<Settings/>}/>
-                        </Routes>
-                    </div>
-
-                    <SideBar state={props.state.sideBar} />
+                        <Route path='/news' element={<News/>}/>
+                        <Route path='/music' element={<Music/>}/>
+                        <Route path='/settings' element={<Settings/>}/>
+                    </Routes>
                 </div>
 
-
+                <SideBar state={props.state.sideBar}/>
             </div>
-        </ BrowserRouter>
+        </div>
     );
 }
 
