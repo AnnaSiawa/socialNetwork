@@ -15,7 +15,7 @@ const MyPosts = (props) => {
     }
 
     return (
-        <div className={styles.mypost}>
+        <div className={styles.myPost}>
             <div>
                 <img className={styles.ava} alt=''
                      src='https://avatars.mds.yandex.net/i?id=37ca37f52ce37f025614494a08661b80-5650815-images-thumbs&n=13'/>

@@ -1,11 +1,14 @@
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
+  grid-template-areas: "dialogsItems messages"
+                        "dialogsItems myMessage";
   background-color: #fff;
   box-shadow: 2px 2px 8px 4px rgba(34, 60, 60, 0.2);
 }
 
 .dialogsItems {
+  grid-area: dialogsItems;
   padding: 10px;
 }
 
@@ -24,6 +27,7 @@
 
 
 .messages {
+  grid-area: messages;
   padding: 10px;
 }
 

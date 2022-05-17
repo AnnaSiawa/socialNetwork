@@ -1,3 +1,4 @@
+import {Route, Routes} from "react-router-dom";
 import styles from './App.module.scss';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
@@ -8,7 +9,8 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import SideBar from "./components/SideBar/SideBar";
 
-import {Route, Routes} from "react-router-dom";
+import "./style/button.scss"
+import "./style/textarea.scss"
 
 const App = (props) => {
 

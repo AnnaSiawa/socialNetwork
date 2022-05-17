@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Dialogs.module.scss';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
+import MyMessage from './MyMessage/MyMessage';
 
 
 const Dialogs = (props) => {
@@ -21,6 +22,7 @@ const Dialogs = (props) => {
             <div className={styles.messages}>
                 { messagesElements }
             </div>
+            <MyMessage />
         </div>
     );
 }
