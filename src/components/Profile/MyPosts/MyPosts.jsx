@@ -11,7 +11,8 @@ const MyPosts = (props) => {
     let addPost = () => {
         //3.обратиться к объекту со ссылкой
         let text = newPostElement.current.value;
-        alert(text);
+        props.addPost(text);
+        newPostElement.current.value = '';
     }
 
     return (
