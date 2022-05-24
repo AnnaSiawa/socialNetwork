@@ -10,9 +10,12 @@ const MyPosts = (props) => {
 
     let addPost = () => {
         //3.обратиться к объекту со ссылкой
+        props.addPost();
+    }
+
+    let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.addPost(text);
-        newPostElement.current.value = '';
+        props.updateNewPostText(text);
     }
 
     return (
@@ -23,7 +26,10 @@ const MyPosts = (props) => {
             </div>
             <div>my post</div>
             {/*2.привязать пустую ссылку к textarea*/}
-            <textarea ref={newPostElement}></textarea>
+            <textarea
+                ref={newPostElement}
+                value={props.newPostText}
+                onChange={onPostChange}/>
             <button onClick={addPost}>App post</button>
             <button>Remove</button>
 
